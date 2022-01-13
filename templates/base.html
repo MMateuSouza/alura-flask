@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
 </head>
 
 <body>
@@ -23,5 +24,8 @@
       <h1>Jogoteca</h1>
     </div>
     {% block content %}{% endblock %}
+
+    <script type="text/javascript" src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/app.js')}}"></script>
   </div>
 </body>
